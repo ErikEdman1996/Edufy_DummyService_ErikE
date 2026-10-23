@@ -25,7 +25,6 @@ public class UserClientService
 
         String tokenValue = jwt.getTokenValue();
 
-        System.out.println("Sending token to UserService: " + tokenValue);
 
         UserFetchDTO response = restClient.get()
                 .uri(uri)
